@@ -1,0 +1,105 @@
+/* header start.................................................................. */
+.header {
+  height: 88px;
+  border-bottom: 1px solid rgba(181, 181, 181, 1);
+}
+
+.headerDiv {
+  width: calc(100% - 320px);
+  height: 100%;
+  margin: auto;
+  margin-left: 160px;
+  margin-right: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.headerLogo {
+  width: 65.4px;
+  height: 22.87px;
+  cursor: pointer;
+}
+
+.searchBar {
+  background-color: rgba(245, 245, 245, 1);
+  width: 372px;
+  height: 56px;
+  gap: 8px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.searchBar input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background-color: rgba(245, 245, 245, 1);
+  padding: 0;
+  border-radius: 8px;
+  outline: none;
+}
+
+.searchBar img {
+  width: 16px;
+  height: 16px;
+  padding: 4px;
+  margin-left: 16px;
+}
+
+.headerLinks {
+  display: flex;
+  justify-content: space-between;
+  width: 369px;
+  gap: 40px;
+}
+
+.headerLinks a:first-child {
+  opacity: unset;
+}
+
+.headerLinks a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.36px;
+  text-decoration: none;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 1);
+  opacity: 30%;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.headerIcons {
+  display: flex;
+  justify-content: space-between;
+  width: 144px;
+  gap: 20px;
+}
+
+.headerIcons div {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.headerIcons div:nth-child(1) img {
+  width: 20px;
+  height: 17.83px;
+}
+
+.headerIcons div:nth-child(2) img {
+  width: 24.89px;
+  height: 22px;
+}
+
+.headerIcons div:nth-child(3) img {
+  width: 17px;
+  height: 22px;
+}
+/* header end.................................................................. */
