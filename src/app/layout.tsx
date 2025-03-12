@@ -1,10 +1,11 @@
+import "./globals.css";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import FirstSection from "@/components/FirstSection/firstSection";
 import SecondSection from "@/components/SecondSection/SecondSection";
-import "./globals.css";
+import ThirdSection from "@/components/ThirdSection/ThirdSection";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +33,7 @@ export default function RootLayout({
         <Header />
         <FirstSection />
         <SecondSection />
+        <ThirdSection />
         {children}
         <Footer />
       </body>
