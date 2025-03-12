@@ -1,4 +1,4 @@
-footer {
+  .footer {
     background-color: rgba(0, 0, 0, 1);
   }
   
@@ -70,4 +70,16 @@ footer {
   .footerContact div {
     width: 16px;
     height: 16px;
+  }
+
+  @media (max-width: 1119px) {
+    .pc {
+      display: none !important;
+    }
+  }
+  
+  @media (min-width: 1120px) {
+    .mobile {
+      display: none;
+    }
   }

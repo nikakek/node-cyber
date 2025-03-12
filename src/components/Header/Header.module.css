@@ -102,4 +102,15 @@
   width: 17px;
   height: 22px;
 }
-/* header end.................................................................. */
+
+@media (max-width: 1119px) {
+  .pc {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1120px) {
+  .mobile {
+    display: none;
+  }
+}
