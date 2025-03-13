@@ -10,7 +10,7 @@
   justify-content: center;
 }
 
-.playstation {
+.playStation {
   grid-column: 1 / span 2;
   background-color: rgba(255, 255, 255, 1);
   display: flex;
@@ -18,7 +18,7 @@
   justify-content: start;
 }
 
-.playstation div {
+.playStation div {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -38,7 +38,7 @@
   color: rgba(144, 144, 144, 1);
 }
 
-.macbook {
+.macBook {
   grid-column: 3;
   grid-row: 1 / span 2;
   display: flex;
@@ -48,7 +48,7 @@
   justify-content: end;
 }
 
-.airpods {
+.airPods {
   grid-column: 1;
   grid-row: 2;
   background: rgba(237, 237, 237, 1);
@@ -58,20 +58,20 @@
   justify-content: start;
 }
 
-.airpodsDiv {
+.airPodsDiv {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-#airpodsText {
+#airPodsText {
   font-weight: 300;
   font-size: 29px;
   line-height: 40px;
   flex-direction: row;
 }
 
-#airpodsText span {
+#airPodsText span {
   font-weight: 500;
   font-size: 29px;
   line-height: 40px;
@@ -88,32 +88,32 @@
   justify-content: start;
 }
 
-.macbook img {
+.macBook img {
   max-width: 292px;
   width: 100%;
 }
 
-#macbookTexts {
+#macBookTexts {
   display: flex;
   flex-direction: column;
   gap: 16px;
   padding-left: 56px;
 }
 
-#macbookTexts1 {
+#macBookTexts1 {
   font-weight: 100;
   font-size: 64px;
   line-height: 56px;
   color: rgba(0, 0, 0, 1);
 }
 
-#macbookTexts1 span {
+#macBookTexts1 span {
   font-weight: 500;
   font-size: 64px;
   line-height: 56px;
 }
 
-#macbookTexts2 {
+#macBookTexts2 {
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
@@ -147,5 +147,206 @@
 @media (min-width: 1120px) {
   .mobile {
     display: none;
+  }
+}
+
+@media (max-width: 1439px) {
+  .playStation {
+    gap: 30px;
+  }
+
+  .playStation div {
+    padding-right: 20px;
+  }
+
+  .playstationText,
+  .playstationText span {
+    font-size: 35px !important;
+  }
+
+  .item p {
+    font-size: 13px;
+  }
+
+  .macBook img {
+    max-width: 252px;
+  }
+
+  #macBookTexts {
+    padding-left: 20px;
+  }
+
+  #macBookTexts1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  #macBookTexts1 span {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 1119px) {
+  .playStation {
+    gap: 24px;
+  }
+
+  .playStation div,
+  .airPods div,
+  .vision div {
+    gap: 16px;
+    padding-right: 0;
+    padding: 0px 16px 40px;
+  }
+
+  .item img {
+    padding-top: 40px;
+    height: fit-content;
+  }
+
+  #airPodsText,
+  #macBookTexts {
+    font-weight: 300;
+    font-size: 34px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+  }
+
+  #airPodsText {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .item p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .macBook {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    display: flex;
+    gap: 12px;
+    background-color: rgba(237, 237, 237, 1);
+    justify-content: center;
+  }
+
+  .airPods {
+    grid-column: 1;
+    grid-row: 2;
+    background: rgba(237, 237, 237, 1);
+    display: flex;
+    gap: 48px;
+    padding-right: 48px;
+    justify-content: start;
+  }
+
+  .airPodsDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  #airPodsText {
+    font-weight: 300 !important;
+    font-size: 29px !important;
+    line-height: 40px !important;
+  }
+
+  #airPodsText span {
+    font-weight: 500;
+    font-size: 29px;
+    line-height: 40px;
+  }
+
+  .vision {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: rgba(53, 53, 53, 1);
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    gap: 16px;
+    padding-right: 48px;
+    justify-content: start;
+  }
+
+  .macBook img {
+    width: auto;
+    max-width: none;
+  }
+
+  #macBookTexts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-left: 0;
+    padding: 40px 16px;
+  }
+
+  #macBookTexts1 {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  #macBookTexts1 span {
+    font-weight: 300;
+    text-align: center;
+    font-size: 34px;
+  }
+
+  #macBookTexts2 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  #shopNowBlack button {
+    width: 100%;
+  }
+
+  .secondSectionDiv {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+    padding-right: 0;
+  }
+
+  .playStation,
+  .macBook,
+  .airPods,
+  .vision {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .macBook {
+    order: 4;
+  }
+
+  .airPods {
+    order: 1;
+  }
+
+  .vision {
+    order: 2;
+  }
+
+  .playStation {
+    order: 3;
   }
 }

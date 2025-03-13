@@ -1,45 +1,51 @@
-import React from 'react';
-import styles from './ThirdSection.module.css';
-import clsx from 'clsx';
+import React from "react";
+import styles from "./ThirdSection.module.css";
+import clsx from "clsx";
 
 const ThirdSection = () => {
   return (
-    <section className="thirdSection">
-    <div className="thirdSectionDiv">
-        <div className="thirdSectionText">
-        <h2>Browse By Category</h2>
-        <div className="thirdSectionArrows">
+    <section className={styles.thirdSection}>
+      {" "}
+      {/* Apply styles from CSS module */}
+      <div className={styles.thirdSectionDiv}>
+        <div className={styles.thirdSectionText}>
+          <h2>Browse By Category</h2>
+          <div className={styles.thirdSectionArrows}>
             <img src="/icons/Arrow.svg" alt="left arrow" />
-            <img src="/icons/Arrow.svg" alt="left arrow" style={{ transform: "rotate(180deg)" }} />
+            <img
+              src="/icons/Arrow.svg"
+              alt="left arrow"
+              style={{ transform: "rotate(180deg)" }}
+            />
+          </div>
         </div>
-        </div>
-        <div className="thirdSectionCards">
-        <div className="card">
+        <div className={styles.thirdSectionCards}>
+          <div className={styles.card}>
             <img src="/images/Phones.svg" alt="phone" />
             <h3>Phones</h3>
-        </div>
-        <div className="card">
+          </div>
+          <div className={styles.card}>
             <img src="/images/Phones.svg" alt="phone" />
             <h3>Phones</h3>
-        </div>
-        <div className="card">
+          </div>
+          <div className={styles.card}>
             <img src="/images/Phones.svg" alt="phone" />
             <h3>Phones</h3>
-        </div>
-        <div className="card">
+          </div>
+          <div className={styles.card}>
             <img src="/images/Phones.svg" alt="phone" />
             <h3>Phones</h3>
-        </div>
-        <div className="card">
+          </div>
+          <div className={styles.card}>
             <img src="/images/Phones.svg" alt="phone" />
             <h3>Phones</h3>
-        </div>
-        <div className="card">
+          </div>
+          <div className={styles.card}>
             <img src="/images/Phones.svg" alt="phone" />
             <h3>Phones</h3>
+          </div>
         </div>
-        </div>
-    </div>
+      </div>
     </section>
   );
 };

@@ -1,0 +1,92 @@
+.sixthSection {
+  margin-top: 80px;
+  background-image: url("/images/last-section-image.png");
+  width: 100%;
+  height: 448px;
+  gap: 8px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sixthSectionTexts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.sixthSectionTexts div:first-child :first-child {
+  text-align: center;
+  font-weight: 100;
+  font-size: 72px;
+  line-height: 72px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.sixthSectionTexts div:first-child span {
+  font-weight: 300 !important;
+}
+
+.sixthSectionTexts div :nth-child(2) {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  color: rgba(120, 120, 120, 1);
+}
+
+#shopNowWhite button {
+  width: 191px;
+  height: 56px;
+  border-radius: 6px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 1);
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
+#shopNowWhite button:hover {
+  background-color: rgba(255, 255, 255, 1);
+  color: black;
+}
+
+@media (max-width: 1119px) {
+  .pc {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1120px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 1119px) {
+  .sixthSection {
+    margin-top: 56px;
+    background-image: url("/images/last-section-image-mobile.png");
+    height: 512px;
+    background-size: co;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sixthSectionTexts {
+    width: calc(100% - 32px);
+    padding: 0 16px 0 16px;
+  }
+
+  .sixthSectionTexts div:first-child :first-child {
+    font-size: 48px;
+  }
+}

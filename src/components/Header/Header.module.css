@@ -114,3 +114,24 @@
     display: none;
   }
 }
+
+@media (max-width: 1119px) {
+  .headerDiv {
+    width: calc(100% - 32px);
+    height: 100%;
+    margin: auto;
+    margin-left: 16px;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .headerMenu {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+}
+
