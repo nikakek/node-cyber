@@ -1,6 +1,6 @@
 .fourthSection {
   width: fit-content;
-  padding: 56px 0 56px;
+  padding: 56px 0;
   margin: auto;
   width: 100%;
 }
@@ -43,9 +43,10 @@
   align-items: center;
   justify-content: center;
   gap: 16px;
-  padding: 72px 16px 24px 16px;
+  padding: 72px 16px 24px;
   border-radius: 9px;
   position: relative;
+  box-sizing: border-box;
 }
 
 .buyCardDiv img:first-child {
@@ -89,7 +90,7 @@
 }
 
 .fifthSection {
-  padding: 80px 0 80px;
+  padding: 80px 0;
 }
 
 @media (max-width: 1439px) {
@@ -99,7 +100,6 @@
 
   .buyCardDiv {
     max-width: 236px;
-    padding: 72px 16px 24px 16px;
   }
 
   .buyCardDivText {
@@ -110,69 +110,52 @@
 @media (max-width: 1119px) {
   .fourthSection {
     width: calc(100% - 32px);
-    padding: 56px 16px 56px 16px;
+    padding: 56px 16px;
   }
 
   .fourthSectionDiv {
     width: 100%;
-    margin: auto;
   }
 
   .fourthSectionFilter {
-    overflow: scroll;
+    overflow-x: auto;
     white-space: nowrap;
-  }
-
-  .fourthSectionFilter div {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 32px;
-    text-align: center;
-    color: rgba(139, 139, 139, 1);
-  }
-
-  .fourthSectionFilter div:first-child {
-    color: rgba(0, 0, 0, 1);
-    border-bottom: 2px solid black;
+    padding-bottom: 8px;
   }
 
   .buyCards {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
     max-width: 343px;
-    width: 100%;
-    margin: auto;
-    margin-top: 32px;
+    margin: 32px auto 0;
   }
 
   .buyCardDiv {
-    max-width: 139.5px;
-    padding: 24px 12px 24px 12px;
+    max-width: 163.5px;
+    padding: 24px 12px;
     gap: 8px;
   }
 
   .buyCardDiv img:first-child {
     right: 12px;
     top: 24px;
+    width: 24px;
   }
 
   .buyCardDiv img:nth-child(2) {
     margin-top: 40px;
     max-width: 104px;
+    height: auto;
   }
 
   .buyCardDivText {
-    max-width: 139.5px;
-  }
-
-  .buyNowBlack {
-    max-width: 188px;
+    max-width: 100%;
     width: 100%;
   }
 
   .buyNowBlack button {
-    margin: 0;
+    font-size: 14px;
+    padding: 0 8px;
+    margin-top: 4px;
   }
 
   .buyCardDivText div:first-child {
@@ -180,5 +163,12 @@
     line-height: 24px;
     overflow: hidden;
     text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  
+  .fifthSection {
+    padding: 40px 16px;
   }
 }

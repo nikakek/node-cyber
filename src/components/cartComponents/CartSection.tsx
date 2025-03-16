@@ -4,54 +4,45 @@ import clsx from "clsx";
 
 const CartSection = () => {
   return (
-<section className={styles.section}>
-      <div className={styles.itemsContainer}></div>
-      <div className={styles.orderContainer}>
+    <section className={styles.section}>
+      <div className={styles.itemsDiv}></div>
+      <div className={styles.orderDiv}>
         <div className={styles.infoInputs}>
-          <div className={styles.infoTitle}>Order Summary</div>
-          <div className={styles.infoInputsGroup}>
+          <div className={styles.infoTitle}>Order Sumarry</div>
+          <div className={styles.infoInputsDiv}>
             <label htmlFor="discountCode">Discount code / Promo code</label>
             <input
               type="text"
-              id={styles.discountCode}
+              id="discountCode"
               name="discountCode"
               placeholder="Code"
               className={styles.codeInput}
             />
           </div>
-          <div className={styles.infoInputsGroup}>
+          <div className={styles.infoInputsDiv}>
             <label htmlFor="bonusCard">Your bonus card number</label>
             <div className={styles.applyNumber}>
               <input
                 type="text"
-                id={styles.bonusCard}
+                id="bonusCard"
                 name="bonusCard"
                 placeholder="Enter Card Number"
+                className={styles.bonusInput}
               />
-              <button className={styles.applyButton} type="button">Apply</button>
+              <button className={styles.applyButton} type="submit">Apply</button>
             </div>
           </div>
           <div className={styles.checkout}>
-            <div className={styles.totalCost}>
-              <span>Subtotal</span>
-              <span></span>
+            <div className={styles.totalCost}><span>Subtotal</span><span></span></div>
+            <div className={styles.servicesCost}>
+              <span>Estimated Tax</span><span></span>
             </div>
             <div className={styles.servicesCost}>
-              <span>Estimated Tax</span>
-              <span></span>
+              <span>Estimated shipping & Handling</span><span></span>
             </div>
-            <div className={styles.servicesCost}>
-              <span>Estimated Shipping & Handling</span>
-              <span></span>
-            </div>
-            <div className={styles.totalCost}>
-              <span>Total</span>
-              <span></span>
-            </div>
+            <div className={styles.totalCost}><span>Total</span><span></span></div>
           </div>
-          <div className={styles.checkoutButtonContainer}>
-            <button className={styles.checkoutButton}>Checkout</button>
-          </div>
+          <div className={styles.checkoutBlack}><button>Checkout</button></div>
         </div>
       </div>
     </section>

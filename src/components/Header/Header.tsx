@@ -1,7 +1,8 @@
-
+'use client';
 import React from 'react';
 import styles from './Header.module.css';
 import clsx from 'clsx';
+import Link from 'next/link';
 
 type Props = {};
 
@@ -10,7 +11,9 @@ function Header({}: Props) {
     <header className={styles.header}>
       <div className={styles.headerDiv}>
         <div className={styles.headerLogo}>
+        <Link href="./">
           <img src="./icons/cyberLogo.svg" alt="cyber logo" />
+        </Link>
         </div>
         <div className={clsx(styles.searchBar, styles.pc)}>
           <img src="./icons/search-icon.svg" alt="search icon" />
@@ -27,9 +30,9 @@ function Header({}: Props) {
             <img src="./icons/heartIcon.svg" alt="heart icon" />
           </div>
           <div>
-            <a href="./shopping.html">
-              <img src="./icons/shopping-cart.svg" alt="shopping cart icon" />
-            </a>
+          <Link href="./cart">
+            <img src="./icons/shopping-cart.svg" alt="shopping cart icon" />
+          </Link>
           </div>
           <div>
             <img src="./icons/user-icon.svg" alt="user icon" />

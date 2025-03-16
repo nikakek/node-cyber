@@ -108,23 +108,23 @@
     height: 344px;
   }
 
-  #first-section-texts-1 {
+  #firstSectionTexts1 {
     line-height: 32px;
   }
 
-  #first-section-texts-2 {
+  #firstSectionTexts2 {
     font-size: 72px;
     line-height: 72px;
     text-align: center;
   }
 
-  #first-section-texts-3 {
+  #firstSectionTexts3 {
     font-size: 19px;
     text-align: center;
     line-height: 24px;
   }
 
-  #first-section-texts-4 button {
+  #firstSectionTexts4 button {
     margin-top: 16px;
   }
 

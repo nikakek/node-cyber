@@ -3,11 +3,12 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
-import FirstSection from "@/components/FirstSection/firstSection";
-import SecondSection from "@/components/SecondSection/SecondSection";
-import ThirdSection from "@/components/ThirdSection/ThirdSection";
-import FourthFIfthSection from "@/components/FourthFifthSection/FourthFifthSection";
-import SixthSection from "@/components/SixthSection/SixthSection";
+import { Inter } from 'next/font/google';
+
+const inter = Inter({ 
+  subsets: ['latin'],
+  variable: '--font-inter',
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,14 +31,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={inter.className}>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Header />
-        <FirstSection />
-        <SecondSection />
-        <ThirdSection />
-        <FourthFIfthSection />
-        <SixthSection />
         {children}
         <Footer />
       </body>
