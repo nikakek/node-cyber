@@ -6,7 +6,6 @@ const ThirdSection = () => {
   return (
     <section className={styles.thirdSection}>
       {" "}
-      {/* Apply styles from CSS module */}
       <div className={styles.thirdSectionDiv}>
         <div className={styles.thirdSectionText}>
           <h2>Browse By Category</h2>

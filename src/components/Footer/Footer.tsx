@@ -9,7 +9,7 @@ const Footer = () => {
         <div className={styles.footerDiv}>
           <div className={styles.footerText}>
             <div>
-              <img src="./icons/footer-logo.svg" alt="cyber logo" />
+              <img src="/icons/footer-logo.svg" alt="cyber logo" />
             </div>
             <div>
               <p>
@@ -46,22 +46,22 @@ const Footer = () => {
         <div className={styles.footerContact}>
           <div>
             <a href="">
-              <img src="./icons/Twitter.svg" alt="" />
+              <img src="/icons/Twitter.svg" alt="" />
             </a>
           </div>
           <div>
             <a href="">
-              <img src="./icons/Twitter.svg" alt="" />
+              <img src="/icons/Twitter.svg" alt="" />
             </a>
           </div>
           <div>
             <a href="">
-              <img src="./icons/Twitter.svg" alt="" />
+              <img src="/icons/Twitter.svg" alt="" />
             </a>
           </div>
           <div>
             <a href="">
-              <img src="./icons/Twitter.svg" alt="" />
+              <img src="/icons/Twitter.svg" alt="" />
             </a>
           </div>
         </div>
