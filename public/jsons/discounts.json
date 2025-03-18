@@ -1,21 +1,21 @@
 [
   {
-    "image": "/product-images/iphoneGold.svg",
+    "image": "/images/productImages/iphoneGold.svg",
     "name": "Apple iPhone 14 Pro 512GB Gold (MQ293)",
     "price": "$1437"
   },
   {
-    "image": "/product-images/headphone.svg",
+    "image": "/images/productImages/headphone.svg",
     "name": "AirPods Max Silver Starlight Aluminium",
     "price": "$549"
   },
   {
-    "image": "/product-images/smartWatch.svg",
+    "image": "/images/productImages/smartWatch.svg",
     "name": "Apple Watch Series 9 GPS 41mm Starlight Aluminium",
     "price": "$399"
   },
   {
-    "image": "/product-images/iphoneSilver.svg",
+    "image": "/images/productImages/iphoneSilver.svg",
     "name": "Apple iPhone 14 Pro 1TB Gold (MQ294)",
     "price": "$1499"
   }

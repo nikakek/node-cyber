@@ -5,7 +5,9 @@ import clsx from "clsx";
 const CartSection = () => {
   return (
     <section className={styles.section}>
-      <div className={styles.itemsDiv}></div>
+      <div className={styles.itemsDiv}>
+        
+      </div>
       <div className={styles.orderDiv}>
         <div className={styles.infoInputs}>
           <div className={styles.infoTitle}>Order Sumarry</div>
